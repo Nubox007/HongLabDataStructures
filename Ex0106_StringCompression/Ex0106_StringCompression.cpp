@@ -43,7 +43,7 @@ int main()
 
 	// char arr[] = "ababcdfdceeefda";
 	// char arr[] = "a";
-	char arr[] = "ababcdfdceeedag";
+	char arr[] = "sabsxcvsdcvascasdgasdfxxqdfaxcvaadzzzzxxaxadgbrne";
 	int n = sizeof(arr) - 1; // 마지막 안보이는 '\0' 제외
 
 	// 글자가 하나이상이라고 가정
@@ -57,26 +57,30 @@ int main()
 	// 단점: 없는 알파벳도 세야 한다.
 
 	// 표를 사용할 수도 있고 사용하지 않을 수도 있음
+	//InsertionSort(arr, n);
 	int table[26] = { 0 }; // 모든 값을 0으로 초기화
-
 	for (int i = 0; i < 26; i++)
 	{
 		// 힌트: char(i + 97)
 
+		table[i] = Count(arr, n, i+'a');
 		// 표를 만들고 나중에 몰아서 출력하는 방법
 		// table[i] = ...
-
+		char c = 'a'+i;
+		cout << c << table[i];
 		// 표를 만들지 않고 직접 출력하는 방법
 		// ...
+
 	}
 
-	cout << endl;
+	//cout << endl;
 
-	// 출력
-	for (int i = 0; i < 26; i++)
-	{
-		// ...
-	}
+	//// 출력
+	//for (int i = 0; i < 26; i++)
+	//{
+	//	cout << table[i];
+	//}
+
 	cout << endl << endl;
 
 	// 풀이 2. 정렬 후 찾기
@@ -97,11 +101,15 @@ int main()
 		if (arr[i] == c)
 		{
 			// TODO: ...
+			++count;
 		}
-		else
+		else 
 		{
-			// TODO: ...
+			c = arr[i];
+			cout << count << c;
+			count = 1;
 		}
+	
 	}
 
 	cout << count << endl; // 마지막 count 출력

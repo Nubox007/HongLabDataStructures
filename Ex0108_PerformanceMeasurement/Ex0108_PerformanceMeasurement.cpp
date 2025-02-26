@@ -92,8 +92,11 @@ int main()
 			int result_bi;
 			int x_find = x_table[x];
 
+
+			
 			// Sequential Search
 			{
+				
 				int* arr = new int[n];
 				for (int i = 0; i < n; i++)
 					arr[i] = i;
@@ -110,6 +113,8 @@ int main()
 				delete[] arr;
 			}
 
+
+			
 			// Binary Search
 			{
 				int* arr = new int[n];

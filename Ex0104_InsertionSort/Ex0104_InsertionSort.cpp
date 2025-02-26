@@ -105,5 +105,12 @@ int main()
 		cout << "arr2 time : " << elapsed.count() << "ms\n";
 	}
 
+	// Insertion Sort가 더 좋은 이유는 
+	// 버블같이 swap을 하는 경우,
+	// value assignment가 3번 이루어지지만 
+	// Insertion Sort의 경우,
+	// value assignment가 1번만 이루어진다.
+	// 그래서 메모리 효율적인 면에서 더 좋다고 할 수 있다.
+	// 
 	// Stability
 }
