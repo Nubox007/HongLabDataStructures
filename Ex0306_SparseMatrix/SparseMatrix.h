@@ -4,7 +4,7 @@ struct MatrixTerm
 {
 	int row;
 	int col;
-	float value;
+	float value = 0.0f;
 };
 
 class SparseMatrix
@@ -23,7 +23,8 @@ public:
 	SparseMatrix Transpose();
 
 	void PrintTerms();
-	void Print();;
+	void Print();
+	bool IsSorted();
 
 private:
 	MatrixTerm* terms_ = nullptr; // Non-zero terms

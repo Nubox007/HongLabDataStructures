@@ -15,7 +15,7 @@ int main()
 	p1.Print(); // 1 + 1.5*x^1 + 2*x^2
 
 	cout << p1.Eval(0.0f) << endl; // 1 + 1.5*0 + 2*0^2 = 1
-	cout << p1.Eval(1.0f) << endl; // 1 + 1.5*1 + 2*1^2 = 4.5
+	cout << p1.Eval(1.0f) << endl; // 1 + 1.5*1 + 2*1^2 = 6.5
 	cout << p1.Eval(2.0f) << endl; // 1 + 1.5*2 + 2*2^2 = 1 + 3 + 8 = 12
 
 	cout << endl;

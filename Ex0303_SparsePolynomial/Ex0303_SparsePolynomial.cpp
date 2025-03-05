@@ -23,7 +23,7 @@ int main()
 	cout << p1.Eval(1.0f) << endl; // 1 + 1.5*1 + 2*1^2 = 4.5
 	cout << p1.Eval(2.0f) << endl; // 1 + 1.5*2 + 2*2^2 = 1 + 3 + 8 = 12
 
-	cout << endl;
+	cout << " --------------- " << endl;
 
 	// Add() Test1
 	cout << "Add() Test" << endl;
@@ -50,8 +50,8 @@ int main()
 		cout << endl;
 
 		SparsePolynomial psum = p1.Add(p2);
-		psum.Print(); // 1 + 2.5*x^1 + 5*x^2 + 5*x^7 + 2*x^11
-
+		psum.Print(); //	1 + 2.5*x^1 + 5*x^2 + 5*x^7 + 2*x^11
+					  //	1 + 2.5*x^1 + 5*x^2
 		cout << endl;
 	}
 

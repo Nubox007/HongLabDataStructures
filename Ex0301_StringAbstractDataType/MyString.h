@@ -38,6 +38,7 @@ class MyString
 {
 public:
 	MyString();						// 비어 있는 MyString() 생성
+	MyString(int num);
 	MyString(const char* init);		// 맨 뒤에 널 캐릭터'\0'가 들어 있는 문자열로부터 초기화
 	MyString(const MyString& str);	// MyString의 다른 instance로부터 초기화
 	~MyString();

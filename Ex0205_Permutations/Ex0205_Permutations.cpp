@@ -22,24 +22,30 @@ void RecurPermutations(char* arr, int left, int right)
 		// - right는 고정
 
 		// TODO:
+		for (int i = left; i <= right; ++i) 
+		{
+			swap(arr[left], arr[i]);
+			RecurPermutations(arr, left+1, right);
+			swap(arr[left], arr[i]); // 중요! 원본 arr에서 swap 된것이기에 원래대로 돌려야지 다음 순열때 제대로 나온다.
+		}
 	}
 }
 
 int main()
 {
-	/* a 한 글자의 순열 (Permutations)
-
+	/* 
+	a 한 글자의 순열 (Permutations)
 		a
 	*/
 
-	/* ab 두 글자의 순열 (Permutations)
-
+	/* 
+	ab 두 글자의 순열 (Permutations)
 		a b
 		b a
 	*/
 
-	/*  abc 3 글자의 순열 (Permutations)
-
+	/*  
+	abc 3 글자의 순열 (Permutations)
 		a b c
 		a c b
 		b a c
@@ -60,8 +66,8 @@ int main()
 	RecurPermutations(arr, 0, 2);
 	cout << endl;
 
-	// RecurPermutations(arr, 0, 3);
-	// cout << endl;
+	RecurPermutations(arr, 0, 3);
+	cout << endl;
 
 	return 0;
 }
