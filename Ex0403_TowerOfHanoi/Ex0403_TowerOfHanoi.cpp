@@ -46,7 +46,13 @@ void MoveDisk(int from, int to)
 void RecurMoveDisks(int n, int from, int temp, int to)
 {
 	// TODO:
-}
+	if (n == 0) return;
+	RecurMoveDisks(n - 1, from, to, temp);
+	MoveDisk(from, to);
+	RecurMoveDisks(n - 1,temp, from, to);
+
+
+} 
 
 int main()
 {
@@ -57,7 +63,7 @@ int main()
 
 	PrintTowers();
 
-	// MoveDisk(0, 2); // <- 디스크 하나만 움직이는 함수 tower 0 -> tower 2
+	//MoveDisk(0, 2); // <- 디스크 하나만 움직이는 함수 tower 0 -> tower 2
 
 	RecurMoveDisks(num_disks, 0, 1, 2);
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250306-1055-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.31.6"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="Nubox_Computer_"
+	OSRelease=" Personal"
+	OSVersion=" (Build 26100)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="1"
+	ModelName="AMD Ryzen 5 3600 6-Core Processor              "
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="28085"
+	TotalPhysicalMemory="16309"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3600"
+	>
+	<Testing>
+		<StartDateTime>Mar 06 19:55 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
+		<StartTestTime>1741258511</StartTestTime>
+		<TestList/>
+		<EndDateTime>Mar 06 19:55 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
+		<EndTestTime>1741258511</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
